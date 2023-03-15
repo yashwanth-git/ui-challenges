@@ -7,6 +7,54 @@
   margin: 0;
 }
 body {
-  margin: 30px auto;
+  margin: 40px auto;
   font-family: "Fira Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.pokemon-card {
+  width: 600px;
+  border-radius: 5px;
+  padding: 32px;
+  box-shadow: 0px 0px 6px -1px rgb(0 0 0 / 60%);
+}
+.pokemon-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pokemon-card__header h1 {
+  text-transform: uppercase;
+  font-size: 42px;
+  margin-top: 16px;
+}
+.pokemon-card__features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 24px 0;
+}
+.pokemon-card__features .main-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pokemon-card__features .fire {
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 6px;
+  display: flex;
+}
+.fire img {
+  width: 80px;
+}
+.abilities {
+  margin-top: 6px;
+  text-align: center;
 }
