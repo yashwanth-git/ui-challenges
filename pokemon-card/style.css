@@ -18,10 +18,16 @@ img {
   object-fit: contain;
 }
 .pokemon-card {
+  position: relative;
+  padding:32px;
   width: 600px;
-  border-radius: 5px;
-  padding: 32px;
   box-shadow: 0px 0px 6px -1px rgb(0 0 0 / 60%);
+}
+.pokemon-card svg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 .pokemon-card__header {
   display: flex;
@@ -40,11 +46,11 @@ img {
   align-items: center;
   margin: 24px 0;
 }
-.feature p{
+.feature p {
   font-size: 22px;
   text-align: center;
 }
-.feature h3{
+.feature h3 {
   font-size: 38px;
 }
 .pokemon-card__features .main-feature {
