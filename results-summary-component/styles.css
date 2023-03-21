@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+:root {
+  --clr-lt-red: hsl(0, 100%, 67%);
+  --clr-orange: hsl(39, 100%, 56%);
+  --clr-green: hsl(166, 100%, 37%);
+  --clr-blue: hsl(234, 85%, 45%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-pale: hsl(221, 100%, 96%);
+  --clr-lavendar: hsl(241, 100%, 89%);
+  --clr-dark-blue: hsl(224, 30%, 27%);
+  --bg-violet: hsl(252, 100%, 67%);
+  --bg-blue: hsl(241, 81%, 54%);
+  --cir-violet: hsla(256, 72%, 46%, 1);
+  --cir-dark-violet: hsla(241, 72%, 46%, 0);
+  --font-size: 18px;
+  --font-family-default: "HankenGrotesk", sans-serif;
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-800: 800;
+}
