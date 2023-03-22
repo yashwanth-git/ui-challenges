@@ -7,10 +7,10 @@
 }
 
 :root {
-  --clr-lt-red: hsl(0, 100%, 67%);
-  --clr-orange: hsl(39, 100%, 56%);
-  --clr-green: hsl(166, 100%, 37%);
-  --clr-blue: hsl(234, 85%, 45%);
+  --clr-lt-red: 0, 100%, 67%;
+  --clr-orange: 39, 100%, 56%;
+  --clr-green: 166, 100%, 37%;
+  --clr-blue: 234, 85%, 45%;
   --clr-white: hsl(0, 0%, 100%);
   --clr-pale: hsl(221, 100%, 96%);
   --clr-lavendar: hsl(241, 100%, 89%);
@@ -26,7 +26,7 @@
     var(--cir-violet),
     var(--cir-dark-violet)
   );
-  --font-size: 18px;
+  --font-size: 1.125rem;
   --font-family-default: "HankenGrotesk", sans-serif;
   --fw-500: 500;
   --fw-700: 700;
@@ -103,4 +103,75 @@ main {
   font-size: 1rem;
   padding: 0 2em;
   line-height: 1.4;
+}
+.summary {
+  padding: 2em;
+}
+.summary .section-heading {
+  color: var(--clr-dark-blue);
+}
+.summary-items {
+  display: flex;
+  flex-direction: column;
+}
+.summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 0.5rem;
+  margin-top: 0.825em;
+}
+.type-1 {
+  background: hsl(var(--clr-lt-red), 0.1);
+}
+.type-1 .summary-icon span {
+  color: hsl(var(--clr-lt-red));
+}
+.type-2 {
+  background: hsl(var(--clr-orange), 0.1);
+}
+.type-2 .summary-icon span {
+  color: hsl(var(--clr-orange));
+}
+.type-3 {
+  background: hsl(var(--clr-green), 0.1);
+}
+.type-3 .summary-icon span {
+  color: hsl(var(--clr-green));
+}
+.type-4 {
+  background: hsl(var(--clr-blue), 0.1);
+}
+.type-3 .summary-icon span {
+  color: hsl(var(--clr-blue));
+}
+.summary-icon {
+  display: flex;
+  align-items: center;
+}
+.summary-icon span {
+  margin-left: 0.5em;
+}
+.summary-score {
+  color: hsl(224, 30%, 27%, 0.5);
+}
+.summary-score span {
+  color: hsl(224, 30%, 27%);
+  font-weight: var(--fw-700);
+}
+.summary-btn {
+  border: 0;
+  outline: 0;
+  padding: 0.825em 1.625em;
+  display: flex;
+  font-size: var(--font-size);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1.25em;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--clr-white);
+  background-color: var(--clr-dark-blue);
 }
