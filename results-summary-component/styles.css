@@ -19,9 +19,88 @@
   --bg-blue: hsl(241, 81%, 54%);
   --cir-violet: hsla(256, 72%, 46%, 1);
   --cir-dark-violet: hsla(241, 72%, 46%, 0);
+
+  --gradient-primary: linear-gradient(var(--bg-violet), var(--bg-blue));
+
+  --gradient-to-transparent: linear-gradient(
+    var(--cir-violet),
+    var(--cir-dark-violet)
+  );
   --font-size: 18px;
   --font-family-default: "HankenGrotesk", sans-serif;
   --fw-500: 500;
   --fw-700: 700;
   --fw-800: 800;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+body {
+  font-family: var(--font-family-default);
+  font-size: var(--font-size);
+  font-weight: var(--fw-500);
+}
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.results-summary {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.results {
+  text-align: center;
+  max-width: 46rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 2em;
+  background: var(--gradient-primary);
+}
+.section-heading {
+  font-size: 1.25rem;
+  font-weight: var(--fw-700);
+}
+.results .section-heading {
+  color: var(--clr-lavendar);
+}
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  background: var(--gradient-to-transparent);
+  width: 8rem;
+  height: 8rem;
+  margin: 1.5em auto;
+  font-size: 1rem;
+  color: var(--clr-lavendar);
+}
+.score span {
+  font-size: 3rem;
+  color: var(--clr-white);
+  font-weight: var(--fw-700);
+}
+.remark-comment {
+  color: var(--clr-white);
+  font-size: 1.625rem;
+  margin-bottom: 0.25em;
+}
+.remark p:nth-child(2) {
+  color: var(--clr-lavendar);
+  font-size: 1rem;
+  padding: 0 2em;
+  line-height: 1.4;
 }
