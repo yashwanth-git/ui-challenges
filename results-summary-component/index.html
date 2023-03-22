@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results Summary Component</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
       <div class="results-summary">
         <div class="results">
-          <p class="results-heading">Your Result</p>
+          <h1 class="section-heading">Your Result</p>
           <p class="score">
-            76
-            <span>of 100</span>
+            <span> 76</span>
+            of 100
           </p>
           <div class="remark">
-            <h2>Great</h2>
+            <p class="remark-comment">Great</h2>
             <p>
               You scored higher than 65% of the people who have taken these
               tests.
@@ -25,11 +25,10 @@
           </div>
         </div>
         <div class="summary">
-          <p class="summary-heading">Summary</p>
-          <div class="summary-notes">
-            <div class="note">
-              <div class="note-body">
-                <div class="note-icon">
+          <h2 class="section-heading">Summary</h1>
+          <div class="summary-items">
+              <div class="summary-item type-1">
+                <div class="summary-icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -47,10 +46,10 @@
                   </svg>
                   <span>Reaction</span>
                 </div>
-                <p>80 / 100</p>
+                <p class="summary-score"><span>80</span> / 100</p>
               </div>
-              <div class="note-body">
-                <div class="note-icon">
+              <div class="summary-item type-2">
+                <div class="summary-icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -82,10 +81,10 @@
                   </svg>
                   <span>Memory</span>
                 </div>
-                <p>92 / 100</p>
+                <p class="summary-score"><span>92</span> / 100</p>
               </div>
-              <div class="note-body">
-                <div class="note-icon">
+              <div class="summary-item type-3">
+                <div class="summary-icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -103,10 +102,10 @@
                   </svg>
                   <span>Verbal</span>
                 </div>
-                <p>92 / 100</p>
+                <p class="summary-score"><span>61</span> / 100</p>
               </div>
-              <div class="note-body">
-                <div class="note-icon">
+              <div class="summary-item type-4">
+                <div class="summary-icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -131,9 +130,8 @@
                   </svg>
                   <span>Verbal</span>
                 </div>
-                <p>92 / 100</p>
+                <p class="summary-score"><span>72</span> / 100</p>
               </div>
-            </div>
             <button class="summary-btn">Continue</button>
           </div>
         </div>
